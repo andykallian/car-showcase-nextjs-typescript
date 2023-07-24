@@ -6,7 +6,7 @@ import { Combobox, Transition } from '@headlessui/react'
 import { manufacturers } from '@/constants'
 import React, { useState, Fragment } from 'react'
 
-const SearchManufacturer = ({ manufacture, setManufacture }: SearchManuFacturerProps) => {
+const SearchManufacturer = ({ manufacturer, setManuFacturer }: SearchManuFacturerProps) => {
 
 
   const [query, setQuery] = useState('');
@@ -23,7 +23,7 @@ const SearchManufacturer = ({ manufacture, setManufacture }: SearchManuFacturerP
 
   return (
     <div className='search-manufacturer'>
-      <Combobox value={manufacture} onChange={setManufacture}>
+      <Combobox value={manufacturer} onChange={setManuFacturer}>
         <div className='relative w-full'>
           <Combobox.Button className='absolute top-[14px]'>
             <Image
