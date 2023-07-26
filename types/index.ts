@@ -1,3 +1,4 @@
+
 import { manufacturers } from './../constants/index';
 import { MouseEventHandler } from "react";
 
@@ -51,4 +52,9 @@ export interface CarProps {
   model: string;
   transmission: string;
   year: number
+}
+
+export interface ShowMoreProps{
+  pageNumber: number;
+  isNext: boolean
 }
